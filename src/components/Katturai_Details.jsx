@@ -39,7 +39,7 @@ const ArticleDetails = ({ article }) => {
   return (
     <>
     <div className="header-detail">
-      <Link to="/katturai">
+      <Link to="/">
       <FaArrowLeft/>
       </Link>
       <div className="header-detail2">
