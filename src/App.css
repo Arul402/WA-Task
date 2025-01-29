@@ -1,0 +1,511 @@
+.title-name{
+  text-align: center;
+}
+
+.nav__search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 20px;
+  width: 50%; 
+  max-width: 500px;
+  margin: 0 auto; 
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 45px 10px 20px; 
+  border: 2px solid #333; 
+  border-radius: 25px; 
+  outline: none;
+  background-color: white;
+  font-size: 16px;
+  color: black; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.search-btn {
+  position: absolute;
+  right: 10px; 
+  background-color: #333; 
+  color: white; 
+  border: none;
+  border-radius: 50%; 
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-btn:hover {
+  background-color: #CADCFC; 
+}
+
+.search-btn svg {
+  font-size: 18px; 
+}
+
+
+
+
+.container {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 20px; 
+  justify-content: center; 
+  align-items: flex-start; 
+  padding: 20px; 
+}
+
+
+
+.product-card {
+  width: 250px;
+  max-width: 100%;
+  background-color: #dcdcdc; 
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  position: relative;
+  margin: 20px;
+  text-decoration: none;
+}
+
+
+.product-image {
+  position: relative;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 200px;
+  display: block;
+  border-bottom: 2px solid #ccc;
+}
+.veg-pic {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+  
+}
+.redchilli-pic{
+  width: 50px;
+  height: 40px;
+  display: block;
+  border-radius: 5px;
+  mix-blend-mode: multiply;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 10;
+  width: 88%;
+  height: 15%;
+  background: rgba(0, 0, 0, 0.5); 
+  /* background: rgba(128, 128, 128, 0.5); */
+
+  color: white;
+  text-align: left;
+  /* justify-content: center; */
+  padding: 10px;
+  z-index: 10;
+}
+.image-overlay h3{
+  text-align: left;
+  position: absolute;
+  top: 0px;
+  left: 5px;
+}
+
+
+.product-details {
+  padding: 15px;
+  text-align: left;
+  color: #333;
+}
+
+.product-category {
+  font-size: 14px;
+  color: #555;
+}
+
+.product-details h4 a {
+  text-decoration: none;
+  color: #00246B; 
+  font-weight: bold;
+}
+
+.product-details p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+.product-bottom-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #333;
+}
+
+.product-bottom-details button {
+  background-color: #00246B; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-bottom-details button:hover {
+  background-color: #CADCFC;
+}
+
+
+.product-footer {
+  background-color: #dcdcdc;
+  color: #555;
+  text-align: center;
+  padding: px;
+  font-size: 12px;
+  font-style: italic;
+  border-top: 2px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.badge {
+  position: absolute; 
+  top: 10px; 
+  right: 2px; 
+  text-transform: uppercase; 
+  font-size: 10px; 
+  font-weight: 500; 
+  width: 20px;
+  color: #fff; 
+  padding: 5px 12px; 
+  border-radius: 15px; 
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
+  z-index: 10; 
+}
+
+
+.container2 {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 20px;
+  gap: 0px; /* Space between items */
+}
+
+@media (max-width: 600px){
+  .container2 {
+    /* gap: 10px; */
+    flex-direction: column-reverse; 
+    width: 100%;
+    padding: 10px;
+    gap: 30px;
+  }
+  .title-name{
+    /* text-align: center; */
+    font-size: large;
+  }
+  
+  .container{
+    gap: 0px;
+    padding: 0px;
+  }
+  .search-btn{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+  right: 20px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; */
+  }
+  .search-input{
+    width: 50%;
+    height: 10px;
+    font-size: small;
+  }
+  .product-card {
+    width: 130px;
+    max-width: 100%;
+  }
+  .profile-pic {
+    width: 100%;
+    height: 100px;
+    display: block;
+    border-bottom: 2px solid #ccc;
+  }
+  .veg-pic {
+    width: 50%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    
+  }
+  .badge{
+    position: absolute;
+    top: 10px;
+    right: -20px;
+  }
+  .redchilli-pic{
+    width: 30px;
+    height: 20px;
+    display: block;
+    border-radius: 5px;
+    mix-blend-mode: multiply;
+  }
+  .image-overlay {
+    position: absolute;
+    bottom: px;
+    left: 10;
+    /* top: 5px; */
+    width: 77%;
+    height: 15%;
+    background: rgba(0, 0, 0, 0.5); 
+    color: white;
+    text-align: left;
+    /* justify-content: center; */
+    padding: 10px;
+    z-index: 10;
+  }
+  .image-overlay h3{
+    text-align: left;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    font-size:smaller;
+  }
+  .product-footer {
+    background-color: #dcdcdc;
+    color: #555;
+    text-align: center;
+    /* padding: px; */
+    font-size: 10px;
+    height: 25px;
+    font-style: italic;
+    border-top: 2px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+  }
+  .product-footer h3{
+    position: relative;
+    right: px;
+    top: -5px;
+  }
+}
+
+
+.food-detail-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 90%;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+  flex: 1;
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.food-image {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.icon-section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: #00246B;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #CADCFC;
+}
+
+.right-section {
+  flex: 2;
+  padding-left: 1rem;
+}
+
+.food-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00246B;
+}
+
+.food-description {
+  font-size: 1rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.food-price {
+  font-size: 1.5rem;
+  color: #00246B;
+  font-weight: bold;
+}
+
+.ingredients-section,
+.process-section,
+.medical-uses-section {
+  margin-top: 1.5rem;
+}
+
+.ingredients-section h3,
+.process-section h3,
+.medical-uses-section h3 {
+  font-size: 1.3rem;
+  color: #00246B;
+  margin-bottom: 0.5rem;
+}
+
+.ingredients-section ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.ingredients-section li {
+  margin-bottom: 0.5rem;
+}
+
+.process-section p,
+.medical-uses-section p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.image-overlay2 {
+  position: absolute;
+  top: 207px;
+  left: 10;
+  /* transform: translate(-50%, -50%); */
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.image-overlay2 h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.footer{
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+}
+@media (max-width: 600px){
+  .footer{
+    font-size: medium;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .food-detail-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-section {
+    max-width: 100%;
+  }
+
+  .right-section {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .food-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .food-detail-card {
+    padding: 1rem;
+  }
+
+  .food-title {
+    font-size: 1.5rem;
+  }
+
+  .icon {
+    font-size: 1.3rem;
+  }
+
+  .image-overlay2 {
+    top: 180px;
+    left: 5px;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .food-detail-card {
+    width: 95%;
+    padding: 0.8rem;
+  }
+
+  .food-title {
+    font-size: 1.3rem;
+  }
+
+  .icon-section {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .image-overlay2 {
+    /* width: 100%; */
+    top: 150px;
+    left: 0;
+    padding: 0.3rem 0.8rem;
+  }
+  
+}
