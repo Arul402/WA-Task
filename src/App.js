@@ -27,9 +27,9 @@ function App() {
       </header> */}
       <Router>
         <Routes>
-          <Route path='/' element={ <Menu/>} />
+          <Route path='/menu' element={ <Menu/>} />
           <Route path='/detail/:id' element={ <Details/>} />
-          <Route path='/katturai' element={ <Katturai/>} />
+          <Route path='/' element={ <Katturai/>} />
           <Route path='/katturai-details' element={ <Katturai_Details/>} />
           </Routes>
           </Router>
