@@ -210,9 +210,11 @@ const Katturai = () => {
       <div className="header">
       {isMobile && (
   <>
+  <div className="header-top">
     <span className="menu-icon" onClick={toggleMenu}>
       ☰
     </span>
+    </div>
     <nav>
       <div className={`nav-links ${isMenuOpen ? "open" : ""}`}>
       <span className="close" onClick={toggleMenu}>
