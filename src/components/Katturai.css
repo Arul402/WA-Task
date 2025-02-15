@@ -216,6 +216,7 @@
 
 
   @media (max-width: 768px) {
+    
     .nav-links {
       display: none; 
       flex-direction: column;
@@ -259,7 +260,7 @@
     }
     .header-top{
       position: relative;
-      left: 35px;
+      left: 25px;
     }
     .header-top h1{
       position: relative;
@@ -267,7 +268,7 @@
     }
     .search-btn2{
       position: relative;
-      /* right:  0px; */
+      right:  10px;
     }
     .type-three {
       display: flex;
@@ -280,6 +281,24 @@
     width: calc(50% - 10px); 
     height: 200px;
     border: 1px solid #ddd;
+    }
+    .type-two{
+      width: 300px;
+    }
+    .type-two .image{
+      /* width: 100px; */
+      height: 150px;
+
+    }
+    .type-two .image img{
+      width: 100px;
+      /* height: 100px; */
+    }
+    .type-two .text {
+      font-size:medium;
+    }
+    .sep{
+      justify-content: space-around;
     }
   }
 
